@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Portfolio Website – Off-Road & AV Tech
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **React + Styled-Components portfolio website** built with TypeScript. It showcases **off-road racing**, **AV work**, and includes a fully functional **contact form** integrated with **EmailJS**. Designed with a **clean, minimal UI**, it’s responsive for both desktop and mobile.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### General
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   Responsive layout with grid and flex design.
+-   Clean, minimal, user-friendly interface.
+-   Dark/light mode support via theme (if added later).
+-   Mobile-friendly and optimized for performance.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Sections
 
-### `npm test`
+-   **Home**: Hero section and intro.
+-   **Schedule**: Upcoming races/events.
+-   **Racers**: Profiles, hometowns, fun facts.
+-   **Live Tracking**: Placeholder for live race tracking (future expansion).
+-   **Contact**: Fully functional contact form with EmailJS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Contact Form
 
-### `npm run build`
+-   Name, Email, Subject, Message fields.
+-   Success and error feedback messages.
+-   Sends submissions directly to EmailJS dashboard.
+-   Includes email address for replying to submissions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Other
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Styled-components for modular CSS.
+-   Dynamic state management with React `useState`.
+-   Environment variables for EmailJS credentials.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+```
