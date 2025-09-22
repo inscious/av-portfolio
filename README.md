@@ -1,46 +1,34 @@
-# Portfolio Website – Off-Road & AV Tech
+# Saul Cortes – Personal Portfolio Website
 
-This project is a **React + Styled-Components portfolio website** built with TypeScript. It showcases **off-road racing**, **AV work**, and includes a fully functional **contact form** integrated with **EmailJS**. Designed with a **clean, minimal UI**, it’s responsive for both desktop and mobile.
+This is my **personal portfolio website**, built with **React, TypeScript, and Styled-Components**.  
+It showcases my skills in **web development**, **off-road racing**, and **AV technology**, along with interactive features like a **contact form** integrated with **EmailJS**.  
 
----
-
-## Features
-
-### General
-
--   Responsive layout with grid and flex design.
--   Clean, minimal, user-friendly interface.
--   Dark/light mode support via theme (if added later).
--   Mobile-friendly and optimized for performance.
-
-### Sections
-
--   **Home**: Hero section and intro.
--   **Schedule**: Upcoming races/events.
--   **Racers**: Profiles, hometowns, fun facts.
--   **Live Tracking**: Placeholder for live race tracking (future expansion).
--   **Contact**: Fully functional contact form with EmailJS.
-
-### Contact Form
-
--   Name, Email, Subject, Message fields.
--   Success and error feedback messages.
--   Sends submissions directly to EmailJS dashboard.
--   Includes email address for replying to submissions.
-
-### Other
-
--   Styled-components for modular CSS.
--   Dynamic state management with React `useState`.
--   Environment variables for EmailJS credentials.
+> **Note:** This project is for personal use and is **not intended for cloning or public contribution**.
 
 ---
 
-## Installation
+## Overview
 
-1. Clone the repository:
+The portfolio includes the following main sections:
 
-```bash
-git clone <your-repo-url>
-cd <your-project-folder>
-```
+- **Hero** – Landing section with introduction and key info.
+- **About** – Personal background and experience.
+- **Skills** – Technical and professional skills.
+- **Portfolio** – Showcase of projects and work.
+- **Contact** – Fully functional contact form with EmailJS.
+
+The site is designed to be **clean, minimal, and responsive** for both desktop and mobile devices.
+
+---
+
+## Contact Form
+
+The contact form is powered by **EmailJS**, allowing users to send messages directly to my inbox.  
+Fields included:
+
+- Name
+- Email
+- Subject
+- Message
+
+**EmailJS Template Example:**
