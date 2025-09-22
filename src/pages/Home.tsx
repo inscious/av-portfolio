@@ -5,8 +5,6 @@ import {
     About,
     Skills,
     Portfolio,
-    Responsive,
-    Achievements,
     Contact,
 } from "../components/sections";
 import { Footer } from "../components/layout";
@@ -22,8 +20,7 @@ const Home: React.FC = () => {
             <About />
             <Skills />
             <Portfolio />
-            {/* <Responsive /> */}
-            {/* <Achievements /> */}
+
             <Contact />
             <Footer />
         </HomePage>
