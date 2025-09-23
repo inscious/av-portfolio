@@ -1,60 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Section, SectionTitle, ProgressBar } from "../common";
-
-interface Skill {
-    name: string;
-    percent: number;
-}
-
-interface SkillGroup {
-    title: string;
-    icon: React.ReactNode;
-    skills: Skill[];
-}
-
-const SkillGroups = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-`;
-
-const SkillGroupContainer = styled.div`
-    margin-bottom: 2rem;
-`;
-
-const SkillGroupTitle = styled.h3`
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-
-    svg {
-        margin-right: 10px;
-    }
-`;
-
-const SkillBar = styled.div`
-    margin-bottom: 1.5rem;
-`;
-
-const SkillInfo = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-`;
-
-const SkillName = styled.span`
-    font-weight: 500;
-`;
-
-const SkillPercentage = styled.span`
-    color: ${({ theme }) => theme.colors.textSecondary};
-`;
+import { Container, Section, SectionTitle } from "../common";
 
 // SVG Icons
 const WebDevIcon = () => (
@@ -97,28 +43,80 @@ const AVTechIcon = () => (
     </svg>
 );
 
+// Styled components
+const SkillGroups = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+`;
+
+const SkillGroupContainer = styled.div``;
+
+const SkillGroupTitle = styled.h3`
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 10px;
+    }
+`;
+
+const SkillBadges = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+`;
+
+const Badge = styled.span`
+    background-color: ${({ theme }) => theme.colors.secondaryBackground};
+    color: ${({ theme }) => theme.colors.textPrimary};
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.primaryAccent};
+        color: #fff;
+        cursor: default;
+    }
+`;
+
+interface SkillGroup {
+    title: string;
+    icon: React.ReactNode;
+    skills: string[];
+}
+
 const Skills: React.FC = () => {
     const skillGroups: SkillGroup[] = [
         {
             title: "Web Development",
             icon: <WebDevIcon />,
             skills: [
-                { name: "React / Next.js", percent: 95 },
-                { name: "Node.js / Express", percent: 90 },
-                { name: "HTML5 / CSS3 / SCSS", percent: 95 },
-                { name: "TypeScript", percent: 85 },
-                { name: "MongoDB / SQL", percent: 80 },
+                "React / Next.js",
+                "Node.js / Express",
+                "HTML5 / CSS3 / SCSS",
+                "TypeScript",
+                "MongoDB / SQL",
             ],
         },
         {
             title: "AV Technology",
             icon: <AVTechIcon />,
             skills: [
-                { name: "LED Wall Configuration", percent: 90 },
-                { name: "Video Switching & Processing", percent: 85 },
-                { name: "Audio System Design", percent: 80 },
-                { name: "Projection Mapping", percent: 75 },
-                { name: "Lighting Programming", percent: 85 },
+                "LED Wall Configuration",
+                "Video Switching & Processing",
+                "Audio System Design",
+                "Projection Mapping",
+                "Lighting Programming",
             ],
         },
     ];
@@ -131,20 +129,13 @@ const Skills: React.FC = () => {
                     {skillGroups.map((group, index) => (
                         <SkillGroupContainer key={index}>
                             <SkillGroupTitle>
-                                {group.icon}
-                                {group.title}
+                                {group.icon} {group.title}
                             </SkillGroupTitle>
-                            {group.skills.map((skill, skillIndex) => (
-                                <SkillBar key={skillIndex}>
-                                    <SkillInfo>
-                                        <SkillName>{skill.name}</SkillName>
-                                        <SkillPercentage>
-                                            {skill.percent}%
-                                        </SkillPercentage>
-                                    </SkillInfo>
-                                    <ProgressBar percent={skill.percent} />
-                                </SkillBar>
-                            ))}
+                            <SkillBadges>
+                                {group.skills.map((skill, i) => (
+                                    <Badge key={i}>{skill}</Badge>
+                                ))}
+                            </SkillBadges>
                         </SkillGroupContainer>
                     ))}
                 </SkillGroups>

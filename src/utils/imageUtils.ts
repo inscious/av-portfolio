@@ -1,10 +1,10 @@
 // Import your images here
 import portfolioImg1 from "../assets/images/plus.jpg";
 import portfolioImg2 from "../assets/images/senko.jpg";
-import portfolioImg3 from "../assets/images/avalabs-1.jpeg";
+import portfolioImg3 from "../assets/images/noesis_GDC2025.jpg";
 import portfolioImg4 from "../assets/images/sample1.jpg";
 import portfolioImg5 from "../assets/images/sample2.jpg"; // Note the uppercase JPG to match your file
-import portfolioImg6 from "../assets/images/sample3.jpg";
+import portfolioImg6 from "../assets/images/infosys-1.jpg";
 
 import aboutImg from "../assets/images/about.jpeg"; // Changed to .jpeg if that's what you have
 import avatarImg from "../assets/images/avatar.jpg";

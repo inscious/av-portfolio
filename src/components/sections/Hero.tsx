@@ -9,8 +9,13 @@ const HeroSection = styled.section`
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding: 120px 1rem 2rem; /* 👈 increased top padding to push below nav */
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        padding: 100px 1rem 3rem; /* slightly less on mobile */
+    }
 `;
+
 
 const TechBackground = styled.div`
     position: absolute;
@@ -38,8 +43,10 @@ const SplitHero = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center; /* center text on mobile */
     }
 `;
+
 
 const HeroText = styled.div`
     padding-right: 2rem;
@@ -71,11 +78,17 @@ const HeroButtons = styled.div`
     display: flex;
     gap: 1rem;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
+
+        a {
+            width: 100%; /* buttons span screen */
+            text-align: center;
+        }
     }
 `;
+
 
 const HeroVisual = styled.div`
     position: relative;
@@ -85,7 +98,11 @@ const HeroVisual = styled.div`
     box-shadow: 0 20px 40px ${({ theme }) => theme.colors.boxShadow};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-        height: 350px;
+        height: 300px; /* shorter for mobile */
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+        height: 250px;
     }
 `;
 

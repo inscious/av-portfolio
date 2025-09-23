@@ -84,7 +84,6 @@ const Footer: React.FC = () => {
                     <FooterLink href="#about">About</FooterLink>
                     <FooterLink href="#skills">Skills</FooterLink>
                     <FooterLink href="#portfolio">Portfolio</FooterLink>
-                    <FooterLink href="#achievements">Achievements</FooterLink>
                     <FooterLink href="#contact">Contact</FooterLink>
                 </FooterNav>
                 <SocialLinks>

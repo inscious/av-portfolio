@@ -72,24 +72,34 @@ const About: React.FC = () => {
                 <AboutContent>
                     <AboutText>
                         <p>
-                            With over 8 years of experience in both web
-                            development and audiovisual technology, I specialize
-                            in creating seamless digital experiences that bridge
-                            the gap between online platforms and physical
-                            spaces.
+                            With over a year of experience as a{" "}
+                            <strong>showsite supervisor</strong>, I’ve overseen
+                            expo builds and ensured projects are executed
+                            smoothly and on time. In addition to supervising
+                            crews, responsibilities have included working as an{" "}
+                            <strong>AV technician</strong>, installing{" "}
+                            <strong>LED walls</strong> and managing technical
+                            setups directly on showsite where permitted. This
+                            blend of leadership and hands-on expertise provides
+                            the ability to adapt to a wide range of challenges
+                            in live environments.
                         </p>
                         <p>
-                            My passion for technology extends from writing
-                            clean, efficient code to designing and implementing
-                            complex AV systems for events, conferences, and
-                            permanent installations.
+                            My background in <strong>web development</strong>{" "}
+                            further expands my problem solving skills. I enjoy
+                            diving into complex systems, approaching challenges
+                            from both technical and creative perspectives, and
+                            developing efficient solutions that connect digital
+                            and physical experiences.
                         </p>
                         <p>
-                            When I'm not immersed in the digital world, you'll
-                            find me exploring trails on my{" "}
-                            <Highlight>dirt bike</Highlight>, pushing boundaries
-                            and seeking new challenges that fuel my creative
-                            problem-solving approach.
+                            I am currently a proud member of{" "}
+                            <strong>Local 831 Trade Show Technicians</strong>,
+                            continuing to grow my expertise within the industry.
+                            Outside of work, I’m passionate about off-road
+                            riding. Pushing my <Highlight>CRF450RL</Highlight>{" "}
+                            through Baja inspires the same determination and
+                            focus I bring to every project.
                         </p>
                         <Button as="a" href="#contact">
                             Let's Connect

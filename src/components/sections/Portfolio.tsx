@@ -211,6 +211,14 @@ const Portfolio: React.FC = () => {
     const portfolioItems: PortfolioItemType[] = [
         {
             id: 1,
+            title: "Snowflake Summit 2025",
+            category: "av",
+            description: "CMS for a network of digital displays.",
+            image: images.portfolio.combined2,
+            link: "#",
+        },
+        {
+            id: 2,
             title: "ACT 2025",
             category: "av",
             description: "A complete AV setup for a major event.",
@@ -218,7 +226,7 @@ const Portfolio: React.FC = () => {
             link: "#",
         },
         {
-            id: 2,
+            id: 3,
             title: "OFC 2025",
             category: "av",
             description: "A/V system integration for a conference.",
@@ -226,7 +234,7 @@ const Portfolio: React.FC = () => {
             link: "#",
         },
         {
-            id: 3,
+            id: 4,
             title: "GDC 2025",
             category: "av",
             description: "Multi-stage AV support for a 3-day conference.",
@@ -234,7 +242,7 @@ const Portfolio: React.FC = () => {
             link: "#",
         },
         {
-            id: 4,
+            id: 5,
             title: "Interactive LED Installation",
             category: "av",
             description: "Motion-responsive LED wall installation.",
@@ -242,21 +250,14 @@ const Portfolio: React.FC = () => {
             link: "#",
         },
         {
-            id: 5,
+            id: 6,
             title: "Virtual Event Platform",
             category: "combined",
             description: "Hybrid event platform with live streaming.",
             image: images.portfolio.combined1,
             link: "#",
         },
-        {
-            id: 6,
-            title: "Snowflake Summit 2025",
-            category: "combined",
-            description: "CMS for a network of digital displays.",
-            image: images.portfolio.combined2,
-            link: "#",
-        },
+        
     ];
 
     const filteredItems = portfolioItems.filter((item) => {
